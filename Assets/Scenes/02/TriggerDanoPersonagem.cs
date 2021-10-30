@@ -34,14 +34,11 @@ public class TriggerDanoPersonagem : MonoBehaviour
             vida -= 20;
         }
 
-        if (vida <= 0 && other.gameObject.name != "Plane")
+        if (vida <= 0 && other.gameObject.name != "Chao")
         {
             SceneManager.LoadScene("Scene 02");
 
             Destroy(this.gameObject);
-
-            //Cursor.lockState = CursorLockMode.None;
-            //Cursor.visible = true;
         }
     }
 

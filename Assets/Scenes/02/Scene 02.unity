@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 108038550}
   - component: {fileID: 108038549}
   m_Layer: 0
-  m_Name: Cylinder (4)
+  m_Name: Cilindro2
   m_TagString: Cenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 325780611}
   - component: {fileID: 325780610}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Cilindro1
   m_TagString: Cenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 513782446}
   - component: {fileID: 513782445}
   m_Layer: 0
-  m_Name: AREA_TRIGGER (2)
+  m_Name: Inimigo3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -455,7 +455,7 @@ GameObject:
   - component: {fileID: 581104845}
   - component: {fileID: 581104844}
   m_Layer: 0
-  m_Name: Cylinder (5)
+  m_Name: Vida2
   m_TagString: Vida
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -566,7 +566,7 @@ GameObject:
   - component: {fileID: 597703792}
   - component: {fileID: 597703791}
   m_Layer: 0
-  m_Name: AREA_TRIGGER (1)
+  m_Name: Inimigo2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -783,7 +783,7 @@ GameObject:
   - component: {fileID: 830518805}
   - component: {fileID: 830518804}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Degrau1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -879,7 +879,7 @@ GameObject:
   - component: {fileID: 1035849850}
   - component: {fileID: 1035849854}
   m_Layer: 0
-  m_Name: Cylinder (1)
+  m_Name: Vida1
   m_TagString: Vida
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -989,7 +989,7 @@ GameObject:
   - component: {fileID: 1043780427}
   - component: {fileID: 1043780426}
   m_Layer: 0
-  m_Name: Cylinder (3)
+  m_Name: Municao1
   m_TagString: Municao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1084,7 +1084,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1043780425}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.97, y: 3.22, z: 5.42}
+  m_LocalPosition: {x: -0.21, y: 5.98, z: 8.926}
   m_LocalScale: {x: 0.5745, y: 0.19113302, z: 0.5745}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1103,7 +1103,7 @@ GameObject:
   - component: {fileID: 1066045758}
   - component: {fileID: 1066045757}
   m_Layer: 0
-  m_Name: Cylinder (6)
+  m_Name: Cilindro3
   m_TagString: Cenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1201,7 +1201,7 @@ GameObject:
   - component: {fileID: 1109617847}
   - component: {fileID: 1109617848}
   m_Layer: 0
-  m_Name: AREA_TRIGGER
+  m_Name: Inimigo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1325,7 +1325,7 @@ GameObject:
   - component: {fileID: 1393068179}
   - component: {fileID: 1393068178}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: Degrau5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1405,7 +1405,7 @@ Transform:
   m_LocalScale: {x: 5.7341595, y: 0.9400539, z: 0.2921418}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: -88.711, y: 3.518, z: -3.517}
 --- !u!1 &1412104456
 GameObject:
@@ -1422,7 +1422,7 @@ GameObject:
   - component: {fileID: 1412104458}
   - component: {fileID: 1412104457}
   m_Layer: 0
-  m_Name: AREA_TRIGGER (4)
+  m_Name: Inimigo5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1564,7 +1564,7 @@ GameObject:
   - component: {fileID: 1752056629}
   - component: {fileID: 1752056628}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Degrau3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1661,7 +1661,7 @@ GameObject:
   - component: {fileID: 1822986105}
   - component: {fileID: 1822986104}
   m_Layer: 0
-  m_Name: AREA_TRIGGER (3)
+  m_Name: Inimigo4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1786,7 +1786,7 @@ GameObject:
   - component: {fileID: 1875732817}
   - component: {fileID: 1875732816}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Degrau2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1897,7 +1897,7 @@ GameObject:
   - component: {fileID: 2018999238}
   - component: {fileID: 2018999237}
   m_Layer: 0
-  m_Name: Cube (4)
+  m_Name: Degrau4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1977,7 +1977,7 @@ Transform:
   m_LocalScale: {x: 6.1747885, y: 0.9903539, z: 0.3077736}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -88.713, y: 0, z: 0}
 --- !u!1 &2039060057
 GameObject:
@@ -1993,7 +1993,7 @@ GameObject:
   - component: {fileID: 2039060058}
   - component: {fileID: 2039060062}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Chao
   m_TagString: Cenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2103,7 +2103,7 @@ GameObject:
   - component: {fileID: 2062143830}
   - component: {fileID: 2062143829}
   m_Layer: 0
-  m_Name: Cylinder (2)
+  m_Name: Municao2
   m_TagString: Municao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2219,7 +2219,7 @@ GameObject:
   - component: {fileID: 2081688635}
   - component: {fileID: 2081688634}
   m_Layer: 0
-  m_Name: AREA_TRIGGER (5)
+  m_Name: Inimigo6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2246,7 +2246,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081688633}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 50
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0

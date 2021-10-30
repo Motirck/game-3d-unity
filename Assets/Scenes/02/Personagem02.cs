@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 public class Personagem02 : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class Personagem02 : MonoBehaviour
     public GameObject bala;
     public Transform mira;
     public int municao = 10;
+    public int count = 0;
 
     public Rigidbody body;
     public float forcaPulo;
@@ -94,11 +97,18 @@ public class Personagem02 : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            print("PULOU");
-                
-            body.AddForce(
-                new Vector3(0, 1, 0) * forcaPulo,
-                ForceMode.Impulse);
+            if (count == 0)
+            {
+                print("PULOU");
+
+                body.AddForce(
+                    new Vector3(0, 1, 0) * forcaPulo,
+                    ForceMode.Impulse);
+
+                count++;
+
+                Task.Delay(1000).ContinueWith((task) => { count = 0; });
+            }
         }
     }
 
