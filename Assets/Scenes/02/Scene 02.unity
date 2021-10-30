@@ -474,6 +474,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 10
+  velMovimento: 0
+  eixoX: 0
+  eixoY: 0
+  eixoZ: 0
 --- !u!136 &581104845
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -975,6 +979,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 10
+  velMovimento: 0
+  eixoX: 0
+  eixoY: 0
+  eixoZ: 0
 --- !u!1 &1043780425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2351,15 +2359,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1801327903795105774, guid: 530fd267b8ff942a8a2488ca2b077a61, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.161
+      value: 1.48
       objectReference: {fileID: 0}
     - target: {fileID: 1801327903795105774, guid: 530fd267b8ff942a8a2488ca2b077a61, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.564
+      value: 1.19
       objectReference: {fileID: 0}
     - target: {fileID: 1801327903795105774, guid: 530fd267b8ff942a8a2488ca2b077a61, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.37
+      value: -6.73
       objectReference: {fileID: 0}
     - target: {fileID: 1801327903795105774, guid: 530fd267b8ff942a8a2488ca2b077a61, type: 3}
       propertyPath: m_LocalRotation.w
