@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TriggerDanoPersonagem : MonoBehaviour
 {
@@ -29,7 +30,12 @@ public class TriggerDanoPersonagem : MonoBehaviour
 
         if (vida <= 0 && other.gameObject.name != "Plane")
         {
+            SceneManager.LoadScene("Scene 02");
+
             Destroy(this.gameObject);
+
+            //Cursor.lockState = CursorLockMode.None;
+            //Cursor.visible = true;
         }
     }
 
