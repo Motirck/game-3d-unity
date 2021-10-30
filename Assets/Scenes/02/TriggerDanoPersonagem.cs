@@ -5,6 +5,7 @@ using UnityEngine;
 public class TriggerDanoPersonagem : MonoBehaviour
 {
     public int vida = 100;
+    public static TriggerDanoPersonagem triggerDano;
 
     // Start is called before the first frame update
     void Start()
@@ -18,12 +19,17 @@ public class TriggerDanoPersonagem : MonoBehaviour
         
     }
 
+    void Awake()
+    {
+        triggerDano = this;
+    }
+
     // colidiu com algum colider
     private void OnTriggerEnter(Collider other)
     {
         print("ENTROU NA AREA TRIGGER 123>> " + other.gameObject.name);
 
-        if (other.gameObject.tag != "Municao") {
+        if (other.gameObject.tag != "Municao" && other.gameObject.tag != "Vida") {
             vida -= 20;
         }
 
@@ -31,6 +37,11 @@ public class TriggerDanoPersonagem : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+    }
+
+    public void addVida(int qtd)
+    {
+        vida += qtd;
     }
 
     private void OnTriggerStay(Collider other)

@@ -7,6 +7,7 @@ TagManager:
   - Cenario
   - Bala
   - Municao
+  - Vida
   layers:
   - Default
   - TransparentFX
