@@ -54,6 +54,12 @@ public class Personagem02 : MonoBehaviour
         }
     }
 
+    public void AumentaVida(int qtd, GameObject other)
+    {
+         TriggerDanoPersonagem.triggerDano.addVida(qtd);
+         Destroy(other);
+    }
+
     void Start()
     {
         add<int>(4);
@@ -98,7 +104,7 @@ public class Personagem02 : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        print("COLIDIU NO PONTO " + collision.contacts[0].point.ToString());
+      //  print("COLIDIU NO PONTO " + collision.contacts[0].point.ToString());
     }
 
     // colidiu com algum colider
