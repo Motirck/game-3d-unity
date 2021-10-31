@@ -6,18 +6,6 @@ public class TesteTrigger : MonoBehaviour
 {
     public int vida = 20;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     // colidiu com algum colider
     private void OnTriggerEnter(Collider other)
     {

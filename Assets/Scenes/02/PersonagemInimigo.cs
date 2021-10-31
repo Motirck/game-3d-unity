@@ -20,10 +20,6 @@ public class PersonagemInimigo : MonoBehaviour
         InvokeRepeating("DisparaTiro", 1.0f, 0.9f);
     }
 
-    void Update()
-    {
-    }
-
     void DisparaTiro()
     {
         var gameObjBala = Instantiate(bala, mira.position, Quaternion.identity);

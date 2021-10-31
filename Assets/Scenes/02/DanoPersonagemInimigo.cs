@@ -8,18 +8,6 @@ public class DanoPersonagemInimigo : MonoBehaviour
     public int vida = 100;
     public static DanoPersonagemInimigo dano;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void Awake()
     {
         dano = this;
