@@ -47,6 +47,18 @@ public class TriggerDanoPersonagem : MonoBehaviour
         vida += qtd;
     }
 
+    public void removeVida(int qtd, Collision other)
+    {
+        vida -= qtd;
+
+        if (vida <= 0 && other.gameObject.name != "Chao")
+        {
+            SceneManager.LoadScene("Scene 02");
+
+            Destroy(this.gameObject);
+        }
+    }
+
     private void OnTriggerStay(Collider other)
     {
         print("ESTA NA AREA TRIGGER>> " + other.gameObject.name);

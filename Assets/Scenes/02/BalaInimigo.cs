@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BalaInimigo : MonoBehaviour
 {
-    private float velocidade = 50;
+    private float velocidade = 15;
 
     // Update is called once per frame
     void Update()

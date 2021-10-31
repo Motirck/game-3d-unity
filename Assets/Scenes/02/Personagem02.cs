@@ -12,6 +12,7 @@ public class Personagem02 : MonoBehaviour
     public Transform mira;
     public int municao = 10;
     public int count = 0;
+    public int qtdRemocaoVida = 0;
 
     public Rigidbody body;
     public float forcaPulo;
@@ -114,7 +115,15 @@ public class Personagem02 : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-      //  print("COLIDIU NO PONTO " + collision.contacts[0].point.ToString());
+      print("COLIDIU COM TIRO INIMIGO " + collision.contacts[0].point.ToString());
+
+        if (collision.gameObject.tag == "BalaInimiga")
+        {
+            qtdRemocaoVida = 15;
+            print("Personagem perdeu vida pois foi atingido por tiro inimigo");
+            TriggerDanoPersonagem.triggerDano.removeVida(qtdRemocaoVida, collision);
+            Destroy(collision.gameObject);
+        }
     }
 
     // colidiu com algum colider
