@@ -448,6 +448,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1801327903795105680, guid: 530fd267b8ff942a8a2488ca2b077a61, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7608e2fb2d8910d4caad75b5f205e713, type: 2}
     - target: {fileID: 1801327903795105685, guid: 530fd267b8ff942a8a2488ca2b077a61, type: 3}
       propertyPath: m_Name
       value: PersonagemInimigo
@@ -608,7 +612,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581104843}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.373, y: 3.69, z: -8.482}
+  m_LocalPosition: {x: 8.373, y: 3.76, z: -7.62}
   m_LocalScale: {x: 0.5745, y: 0.19113302, z: 0.5745}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1019,7 +1023,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035849849}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.05, y: 2.68, z: 4.74}
+  m_LocalPosition: {x: 5.86, y: 2.68, z: 4.96}
   m_LocalScale: {x: 0.5745, y: 0.19113302, z: 0.5745}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2421,9 +2425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bala: {fileID: 1358840567182407769, guid: 0363ba4c9f25a384cb1456159fb4a1fa, type: 3}
   mira: {fileID: 1987544038}
-  countDisparo: 0
   qtdRemocaoVida: 0
-  body: {fileID: 0}
 --- !u!114 &2110825563
 MonoBehaviour:
   m_ObjectHideFlags: 0
