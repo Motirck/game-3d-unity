@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 0c793bd8950067e40b989ce0d55671ea, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -2345,6 +2345,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1370142203227425556, guid: ba55dd825baae6d439621606cdbba7fd, type: 3}
+      propertyPath: guyGameObject
+      value: 
+      objectReference: {fileID: 1801327904150641769}
     - target: {fileID: 4273959082543306306, guid: ba55dd825baae6d439621606cdbba7fd, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2468,3 +2472,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 530fd267b8ff942a8a2488ca2b077a61, type: 3}
+--- !u!1 &1801327904150641769 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7940739278278532742, guid: ba55dd825baae6d439621606cdbba7fd, type: 3}
+  m_PrefabInstance: {fileID: 1370142204767825743}
+  m_PrefabAsset: {fileID: 0}

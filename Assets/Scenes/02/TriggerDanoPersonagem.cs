@@ -53,9 +53,9 @@ public class TriggerDanoPersonagem : MonoBehaviour
 
         if (vida <= 0 && other.gameObject.name != "Chao")
         {
-            SceneManager.LoadScene("Scene 02");
-
             Destroy(this.gameObject);
+
+            SceneManager.LoadScene("Scene 02");
         }
     }
 

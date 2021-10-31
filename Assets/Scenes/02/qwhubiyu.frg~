@@ -19,6 +19,31 @@ public class Personagem02 : MonoBehaviour
     public float forcaPulo;
     public static Personagem02 personagem;
 
+    //public int add(int valor)
+    //{
+    //    return (int)(velMovimento + valor);
+    //}
+
+    //public string add(string valor)
+    //{
+    //    return (velMovimento + valor).ToString();
+
+    //}
+
+    //public void add<T> (T objeto)
+    //{
+
+    //    if(objeto is GameObject)
+    //    {
+    //        GameObject convertido = objeto as GameObject;
+            
+    //    }
+    //    else if (objeto is Collider){
+    //        print("Recebeu um colider");
+    //    }
+
+    //}
+
     void Awake()
     {
         personagem = this;
@@ -42,6 +67,10 @@ public class Personagem02 : MonoBehaviour
 
     void Start()
     {
+        //add<int>(4);
+
+        //add<string>("ola mundo");
+
         velMovimento = 3f;
 
         body = GetComponent<Rigidbody>();
@@ -51,11 +80,11 @@ public class Personagem02 : MonoBehaviour
     {
         print("POSICAOOOOOOOOOOOOOOOOOOOOOOOOOOOOO" + body.position.y);
 
-        if (body.position.y < -5)
+        if (body.position.y < 0.4)
         {
-            Destroy(this.gameObject);
-
             SceneManager.LoadScene("Scene 02");
+
+            Destroy(this.gameObject);
         }
 
         var x = Input.GetAxis("Horizontal");
