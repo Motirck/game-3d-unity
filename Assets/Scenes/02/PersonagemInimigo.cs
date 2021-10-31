@@ -8,10 +8,8 @@ public class PersonagemInimigo : MonoBehaviour
 {
     public GameObject bala;
     public Transform mira;
-    public int countDisparo = 0;
     public int qtdRemocaoVida = 0;
 
-    public Rigidbody body;
     public static PersonagemInimigo personagemInimigo;
 
     void Awake()
@@ -21,21 +19,19 @@ public class PersonagemInimigo : MonoBehaviour
 
     void Start()
     {
-        body = GetComponent<Rigidbody>();
+        InvokeRepeating("DisparaTiro", 1.0f, 0.9f);
     }
 
     void Update()
     {
-        if (countDisparo == 0)
-        {
-            var gameObjBala = Instantiate(bala, mira.position, Quaternion.identity);
-            gameObjBala.transform.rotation = transform.rotation;
-
-            countDisparo++;
-
-            Task.Delay(1000).ContinueWith((task) => { countDisparo = 0; });
-        }
     }
+
+    void DisparaTiro()
+    {
+        var gameObjBala = Instantiate(bala, mira.position, Quaternion.identity);
+        gameObjBala.transform.rotation = transform.rotation;
+    }
+
 
     private void OnCollisionEnter(Collision collision)
     {
