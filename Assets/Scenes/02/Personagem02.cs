@@ -106,6 +106,12 @@ public class Personagem02 : MonoBehaviour
             TriggerDanoPersonagem.triggerDano.removeVida(qtdRemocaoVida, collision);
             Destroy(collision.gameObject);
         }
+        else if (collision.gameObject.tag == "Turtle")
+        {
+            qtdRemocaoVida = 15;
+            print("Personagem perdeu vida pois foi atingido por tiro inimigo");
+            TriggerDanoPersonagem.triggerDano.removeVida(qtdRemocaoVida, collision);
+        }
     }
 
     // colidiu com algum colider

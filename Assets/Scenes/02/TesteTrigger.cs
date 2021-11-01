@@ -6,20 +6,22 @@ public class TesteTrigger : MonoBehaviour
 {
     public int vida = 20;
 
-    // colidiu com algum colider
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        print("ENTROU NA AREA TRIGGER 555>> "+ other.gameObject.name);
-        print("nome da tag "+ other.gameObject.tag);
-
-        if (other.gameObject.tag == "Bala")
+        if (collision.gameObject.tag == "Bala")
         {
-            vida -= 10;
-        }
+            print("ENTROU NA AREA TRIGGER 555>> " + collision.gameObject.name);
+            print("nome da tag " + collision.gameObject.tag);
 
-        if (vida <= 0)
-        {
-            Destroy(this.gameObject);
+            if (collision.gameObject.tag == "Bala")
+            {
+                vida -= 10;
+            }
+
+            if (vida <= 0)
+            {
+                Destroy(this.gameObject);
+            }
         }
     }
 

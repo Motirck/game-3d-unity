@@ -9,6 +9,7 @@ TagManager:
   - Municao
   - Vida
   - BalaInimiga
+  - Turtle
   layers:
   - Default
   - TransparentFX
