@@ -2460,6 +2460,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 863603969381480394, guid: ba55dd825baae6d439621606cdbba7fd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a5ed479d3eeada428eb49f98db74716, type: 2}
     - target: {fileID: 1370142203227425556, guid: ba55dd825baae6d439621606cdbba7fd, type: 3}
       propertyPath: guyGameObject
       value: 
@@ -2537,6 +2541,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.61
       objectReference: {fileID: 0}
+    - target: {fileID: 1801327903795105680, guid: 530fd267b8ff942a8a2488ca2b077a61, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e127462c565e83849aebb3b5ed1c99e7, type: 2}
     - target: {fileID: 1801327903795105682, guid: 530fd267b8ff942a8a2488ca2b077a61, type: 3}
       propertyPath: bala
       value: 
@@ -2597,6 +2605,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1801327904709954424, guid: 530fd267b8ff942a8a2488ca2b077a61, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5193316
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801327904709954425, guid: 530fd267b8ff942a8a2488ca2b077a61, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e127462c565e83849aebb3b5ed1c99e7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 530fd267b8ff942a8a2488ca2b077a61, type: 3}
 --- !u!1 &1801327904150641769 stripped
