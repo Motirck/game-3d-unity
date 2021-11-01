@@ -17,7 +17,7 @@ public class PersonagemInimigo : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("DisparaTiro", 1.0f, 0.9f);
+        InvokeRepeating("DisparaTiro", 2.0f, 1.0f);
     }
 
     void DisparaTiro()
