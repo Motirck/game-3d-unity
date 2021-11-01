@@ -27,7 +27,7 @@ public class Personagem02 : MonoBehaviour
     public void AumentaMunicao(GameObject other)
     {
         print("other e igual a " + other.tag);
-        if (other.name != "Chao" && other.tag == "Municao")
+        if (other.tag == "Municao")
         {
             municao += 5;
             Destroy(other);
@@ -55,6 +55,7 @@ public class Personagem02 : MonoBehaviour
         {
             Destroy(this.gameObject);
 
+            SceneManager.LoadScene("Scene 02");
             SceneManager.LoadScene("SimpleNaturePack_Demo");
         }
 

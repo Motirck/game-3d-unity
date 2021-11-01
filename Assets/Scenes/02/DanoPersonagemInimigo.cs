@@ -17,7 +17,7 @@ public class DanoPersonagemInimigo : MonoBehaviour
     {
         vida -= qtd;
 
-        if (vida <= 0 && other.gameObject.name != "Chao")
+        if (vida <= 0)
         {
             Destroy(this.gameObject);
         }
