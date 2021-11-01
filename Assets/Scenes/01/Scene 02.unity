@@ -2540,7 +2540,7 @@ PrefabInstance:
     - target: {fileID: 1801327903795105682, guid: 530fd267b8ff942a8a2488ca2b077a61, type: 3}
       propertyPath: bala
       value: 
-      objectReference: {fileID: 182842, guid: 6b6faee9ec240f84a890865c6ac97a01, type: 3}
+      objectReference: {fileID: 4024065107743689942, guid: 90c29c082cdb1ba4da50dd914fd75fdd, type: 3}
     - target: {fileID: 1801327903795105683, guid: 530fd267b8ff942a8a2488ca2b077a61, type: 3}
       propertyPath: m_IsTrigger
       value: 0

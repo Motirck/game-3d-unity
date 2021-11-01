@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3345352}
   - component: {fileID: 2314336}
   - component: {fileID: 9511408}
-  - component: {fileID: 1263156281657997525}
-  - component: {fileID: 6509238593795661563}
-  - component: {fileID: 4083692584223460839}
+  - component: {fileID: 1042243348997200874}
+  - component: {fileID: 3905985925889947856}
+  - component: {fileID: 6919466950887482863}
   m_Layer: 0
   m_Name: Bullet (HQ)(Clone)
   m_TagString: BalaInimiga
@@ -104,7 +104,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!54 &1263156281657997525
+--- !u!54 &1042243348997200874
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,7 +120,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &6509238593795661563
+--- !u!136 &3905985925889947856
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,11 +130,11 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.015053938
-  m_Height: 0.050533596
+  m_Radius: 0.014105791
+  m_Height: 0.0493687
   m_Direction: 1
-  m_Center: {x: 0.00000005627745, y: -0.005607313, z: -0.0017064338}
---- !u!114 &4083692584223460839
+  m_Center: {x: 0.00000005627745, y: -0.00502487, z: -0.000758289}
+--- !u!114 &6919466950887482863
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
