@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AddMunicao : MonoBehaviour
 {
-    public float velMovimento;
+    public float currentSpeed;
     public float eixoX;
     public float eixoY;
     public float eixoZ;
@@ -15,7 +15,7 @@ public class AddMunicao : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        velMovimento = 25f;
+        currentSpeed = 25f;
         eixoX = 1;
         eixoY = 0;
         eixoZ = 2;
@@ -29,7 +29,7 @@ public class AddMunicao : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(new Vector3(eixoX, eixoY, eixoZ) * velMovimento * Time.deltaTime);
+        transform.Rotate(new Vector3(eixoX, eixoY, eixoZ) * currentSpeed * Time.deltaTime);
     }
 
     // colidiu com algum colider

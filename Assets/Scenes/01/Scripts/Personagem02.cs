@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class Personagem02 : MonoBehaviour
 {
-    public float velMovimento;
+    public float currentSpeed;
     public GameObject bala;
     public Transform mira;
     public int municao = 10;
@@ -39,18 +39,25 @@ public class Personagem02 : MonoBehaviour
          TriggerDanoPersonagem.triggerDano.addVida(qtd);
          Destroy(other);
     }
+    
+    public void IncreaseSpeed(float speed, GameObject other)
+    {
+        var bkpCurrentSpeed = currentSpeed;
+        currentSpeed = speed;
+        Destroy(other);
+
+        Task.Delay(10000).ContinueWith((task) => { currentSpeed = bkpCurrentSpeed; });
+    }
 
     void Start()
     {
-        velMovimento = 4f;
+        currentSpeed = 4f;
 
         body = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
-        print("POSICAOOOOOO" + body.position.y);
-
         if (body.position.y < -5)
         {
             Destroy(this.gameObject);
@@ -62,7 +69,7 @@ public class Personagem02 : MonoBehaviour
         var x = Input.GetAxis("Horizontal");
         var z = Input.GetAxis("Vertical");
 
-        var movimento = new Vector3(x, 0, z) * velMovimento;
+        var movimento = new Vector3(x, 0, z) * currentSpeed;
 
         transform.Translate(movimento * Time.deltaTime);
 
@@ -112,11 +119,5 @@ public class Personagem02 : MonoBehaviour
             print("Personagem perdeu vida pois foi atingido por tiro inimigo");
             TriggerDanoPersonagem.triggerDano.removeVida(qtdRemocaoVida, collision);
         }
-    }
-
-    // colidiu com algum colider
-    private void OnTriggerEnter(Collider other)
-    {
-        
     }
 }
