@@ -27,7 +27,7 @@ public class Personagem02 : MonoBehaviour
     public void AumentaMunicao(GameObject other)
     {
         print("other e igual a " + other.tag);
-        if (other.name != "Plane" && other.tag == "Municao")
+        if (other.name != "Chao" && other.tag == "Municao")
         {
             municao += 5;
             Destroy(other);
