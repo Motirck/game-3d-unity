@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bala : MonoBehaviour
 {
-    private float velocidade = 20;
+    private float velocidade = 15;
     
     // Update is called once per frame
     void Update()
