@@ -42,7 +42,7 @@ public class Personagem02 : MonoBehaviour
 
     void Start()
     {
-        velMovimento = 3f;
+        velMovimento = 4f;
 
         body = GetComponent<Rigidbody>();
     }
@@ -55,7 +55,7 @@ public class Personagem02 : MonoBehaviour
         {
             Destroy(this.gameObject);
 
-            SceneManager.LoadScene("Scene 02");
+            SceneManager.LoadScene("SimpleNaturePack_Demo");
         }
 
         var x = Input.GetAxis("Horizontal");

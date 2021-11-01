@@ -24,7 +24,7 @@ public class TriggerDanoPersonagem : MonoBehaviour
 
         if (vida <= 0 && other.gameObject.name != "Chao")
         {
-            SceneManager.LoadScene("Scene 02");
+            SceneManager.LoadScene("SimpleNaturePack_Demo");
 
             Destroy(this.gameObject);
         }
@@ -43,7 +43,7 @@ public class TriggerDanoPersonagem : MonoBehaviour
         {
             Destroy(this.gameObject);
 
-            SceneManager.LoadScene("Scene 02");
+            SceneManager.LoadScene("SimpleNaturePack_Demo");
         }
     }
 
