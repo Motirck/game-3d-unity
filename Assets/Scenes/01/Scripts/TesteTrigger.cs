@@ -16,6 +16,7 @@ public class TesteTrigger : MonoBehaviour
             if (collision.gameObject.tag == "Bala")
             {
                 vida -= 10;
+                Destroy(collision.gameObject);
             }
 
             if (vida <= 0)

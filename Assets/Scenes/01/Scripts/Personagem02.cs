@@ -49,7 +49,7 @@ public class Personagem02 : MonoBehaviour
 
     void Update()
     {
-        print("POSICAOOOOOOOOOOOOOOOOOOOOOOOOOOOOO" + body.position.y);
+        print("POSICAOOOOOO" + body.position.y);
 
         if (body.position.y < -5)
         {
